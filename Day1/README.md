@@ -60,7 +60,7 @@ sudo apt install iverilog gtkwave yosys graphviz
   * In this example, no observer logic — instead, GTKWave is used to view results.
 * **Simulator:** Icarus compiles, runs, dumps `.vcd`.
 
-🎯 **Image placeholder:** DUT–Testbench–Simulator interaction
+
 
 ---
 
@@ -79,7 +79,6 @@ gtkwave tb_good_mux.vcd
 
 📝 The `.vcd` dump is created using `$dumpfile` and `$dumpvars` inside the testbench.
 
-🎯 **Image placeholder:** GTKWave output
 
 ---
 
@@ -90,7 +89,7 @@ gtkwave tb_good_mux.vcd
 * Output: `y`.
 * Behavior: `sel=1 → y=i1`, else `y=i0`.
 
-🎯 **Image placeholder:** waveform showing sel toggling between inputs
+s
 
 ---
 
@@ -122,7 +121,7 @@ From my notes:
 * **Propagation delay:** depends on input transition + output capacitance.
 * Wider transistors = more drive = faster switching but higher power/area.
 
-🎯 **Image placeholder:** library corner diagram
+
 
 ---
 
@@ -143,7 +142,7 @@ write_verilog -noattr build/good_mux_netlist.v
 
 📝 *Note:* The synthesizer first runs a **syntax check**, then proceeds with mapping.
 
-🎯 **Image placeholder:** Yosys schematic output
+
 
 ---
 
@@ -164,7 +163,7 @@ iverilog build/good_mux_netlist.v verilog/tb_good_mux.v -o a.out
 gtkwave tb_good_mux.vcd
 ```
 
-🎯 **Image placeholder:** Netlist schematic
+
 
 ---
 
@@ -176,7 +175,7 @@ gtkwave tb_good_mux.vcd
 
 📝 Wider transistors → better current sourcing → faster charging → reduced delay.
 
-🎯 **Image placeholder:** setup/hold diagram
+
 
 ---
 
@@ -236,7 +235,7 @@ In this session, I:
 * Learned about **constraints** and their role in guiding synthesis.
 * Explored advanced optimization ideas like **constant propagation, cloning, and retiming**.
 
-🎯 **Image placeholder:** learning highlights collage
+
 
 ---
 

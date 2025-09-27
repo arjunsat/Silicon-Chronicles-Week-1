@@ -32,7 +32,6 @@
 * Learning **timing basics** (setup/hold, propagation delay).
 * Understanding why `.lib` files contain multiple *flavors* of the same cell.
 
-🎯 **Image placeholder:** overall RTL → Netlist → Verification flow
 
 ---
 

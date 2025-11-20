@@ -1,6 +1,7 @@
 # Day 1 — Verilog RTL Design & Synthesis 
 
----
+##What is simulator? ##
+
 
 ## Table of Contents
 
